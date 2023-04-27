@@ -18,7 +18,7 @@ body {
 }
 
 .img-responsive {
-    max-width: 100%;
+    width: 100%;
     display: block;
 }
 
@@ -34,14 +34,26 @@ body {
     grid-template-columns: 1fr 2fr 2fr;
 }
 
+.embed {
+    width: 100%;
+    aspect-ratio: 1 /1;
+}
+
+.instagram-embeds {
+    margin: 30px 0;
+}
+
 .card {
     background: white;
     margin: 30px 0;
 }
 
+.card-header.grid {
+    grid-gap: 0;
+}
+
 .card-body {
     padding: 30px;
-
 }
 
 .card-footer {
@@ -112,7 +124,7 @@ header a {
     font-size: 14px;
     line-height: 1.5;
     text-align: center;
-    color: #272044;
+    color: #5BBCCA;
     padding: 16px 32px;
     margin-top: 32px;
     display: inline-block;
@@ -132,7 +144,7 @@ main h2 {
     line-height: 1.5;
     margin: 0;
     letter-spacing: 5px;
-    color: #272044;
+    color: #011F8B;
     opacity: 0.3;
     text-transform: uppercase;
 }
@@ -149,17 +161,10 @@ main h4 {
     font-weight: 700;
     font-size: 24px;
     line-height: 1;
-    color: #272044;
+    color: #011F8B;
     margin: 0;
 }
 
-main h5 {
-    font-weight: 700;
-    font-size: 13px;
-    margin: 0;
-    line-height: 1;
-    color: #272044;
-}
 
 main p {
     font-style: normal;
@@ -180,7 +185,6 @@ footer {
     url('../images/bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 60px 30px;
 }
 
 footer h3 {
@@ -234,6 +238,14 @@ footer a {
     }
 
     section {
-        padding: 30px;
+        padding: 20px 0;
+    }
+
+    .card-header img {
+        display: none;
+    }
+
+    .embed {
+        aspect-ratio: 1 / 1;
     }
 }
